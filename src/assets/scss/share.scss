@@ -1,0 +1,11 @@
+@import './mixin';
+@import './color';
+
+// font
+$font-normal: to-rem(16px);
+$font-mini: $font-normal * .75;          // 12px
+$font-small: $font-normal * .875;        // 14px
+$font-big: $font-normal * 1.25;          // 20px
+$font-large: $font-normal * 1.5;         // 24px
+$font-huge: $font-normal * 2.75;         // 44px
+$font-mega: $font-normal * 4.5;          // 72px
