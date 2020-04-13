@@ -1,11 +1,10 @@
-// router 導入使用這兩種寫法皆可
-import home from '@/views/home'
+import Home from '@/views/Home'
 
 export const routes = [
   {
     path: '/',
-    name: 'home',
-    component: home
+    name: 'Home',
+    component: Home
   },
   { path: '*', redirect: { name: 'home' } }
 ]
