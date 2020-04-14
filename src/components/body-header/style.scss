@@ -1,0 +1,13 @@
+@import '@/assets/scss/share.scss';
+
+.header__wrap {
+  background: $header-bg;
+}
+
+.nav-item {
+  margin-right: to-rem(16px);
+}
+
+.navbar-nav .nav-item a {
+  color: var(--white);
+}

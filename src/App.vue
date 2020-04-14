@@ -1,7 +1,21 @@
 <template lang="pug">
-  div#app
+  #app
+    bodyHeader
     router-view
 </template>
 
-<style>
+<script>
+import bodyHeader from '@/components/body-header'
+
+export default {
+  components: {
+    bodyHeader
+  },
+  data () {
+    return {}
+  }
+}
+</script>
+
+<style lang="scss" scoped>
 </style>
