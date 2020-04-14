@@ -1,0 +1,23 @@
+@import '@/assets/scss/share.scss';
+
+.home__wrap {
+  display: flex;
+  width: 100%;
+  padding: to-rem(32px);
+}
+
+.article__wrap {
+  width: 80%;
+}
+
+.article__list {
+  background: $primary-mini;
+  margin-bottom: to-rem(24px);
+  padding: to-rem(44px) to-rem(16px);
+  border-radius: to-rem(10px);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
