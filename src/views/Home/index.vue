@@ -1,7 +1,11 @@
 <template lang="pug">
   main.home__wrap
     article.article__wrap
-      .article__list(v-for="node in articleData")
+      .article__list(
+        v-for="node in articleData"
+        :key="node.id"
+        @click="routerArticle(node.id)"
+      )
         .title
           h3 {{ node.title }}
           i {{ node.date }}
@@ -37,6 +41,10 @@ export default {
       }).catch((err) => {
         console.log(err)
       })
+    },
+
+    routerArticle (val) {
+      this.$router.push({ name: 'Article', params: { id: val } })
     }
   },
 

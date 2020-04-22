@@ -17,7 +17,7 @@ export const routes = [
     component: About
   },
   {
-    path: '/article',
+    path: '/article/:id',
     name: 'Article',
     component: Article
   },
