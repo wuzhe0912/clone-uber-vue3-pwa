@@ -3,7 +3,6 @@
   @return ($px / 16px) * 1rem;
 }
 
-// 斷點共用函數
 @mixin position ($type, $top: n, $right: n, $bottom: n, $left: n) {
   position: $type;
 
@@ -21,5 +20,27 @@
 
   @if $left != n {
     left: $left;
+  }
+}
+
+@mixin breakpoint($point, $min: true) {
+  @if $point == ie10 {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      @content;
+    }
+  }
+
+  @else {
+    @if $min == true {
+      @media only screen and (min-width: $point) {
+        @content;
+      }
+    }
+
+    @else {
+      @media only screen and (max-width: $point - 1) {
+        @content;
+      }
+    }
   }
 }

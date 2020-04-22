@@ -5,9 +5,21 @@
 }
 
 .nav-item {
-  margin-right: to-rem(16px);
+  margin-right: to-rem(32px);
 }
 
 .navbar-nav .nav-item a {
   color: var(--white);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.router-link-active {
+  color: var(--white);
+
+  &:hover {
+    text-decoration: none;
+  }
 }

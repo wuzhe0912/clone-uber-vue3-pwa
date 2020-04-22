@@ -1,6 +1,12 @@
 @import './mixin';
 @import './color';
 
+// media width
+$padPro: 1024px;
+$pad: 768px;
+$mobile: 480px;
+$iphone5: 359px;
+
 // font
 $font-normal: to-rem(16px);
 $font-mini: $font-normal * .75;          // 12px

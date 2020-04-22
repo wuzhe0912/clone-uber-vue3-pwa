@@ -4,7 +4,7 @@
 // }
 
 module.exports = {
-  publicPath: '',
+  publicPath: '/',
   // 調整本地端口
   devServer: {
     host: 'localhost',
@@ -21,7 +21,11 @@ module.exports = {
     }
   },
   chainWebpack: (config) => {
-    // config.resolve.alias
-    //   .set('scss', resolve('src/assets/scss'))
+    config
+      .plugin('html')
+      .tap((args) => {
+        args[0].title = 'Tiger Coding Blog'
+        return args
+      })
   }
 }
