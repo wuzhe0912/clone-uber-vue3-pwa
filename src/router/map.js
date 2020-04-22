@@ -4,6 +4,7 @@ import Article from '@/views/Article'
 import Login from '@/views/Login'
 import Admin from '@/views/Admin'
 import Add from '@/views/Admin/add.vue'
+import NotFound404 from '@/views/NotFound404'
 
 export const routes = [
   {
@@ -38,5 +39,5 @@ export const routes = [
       }
     ]
   },
-  { path: '*', redirect: { name: 'home' } }
+  { path: '*', name: 'NotFound404', component: NotFound404 }
 ]

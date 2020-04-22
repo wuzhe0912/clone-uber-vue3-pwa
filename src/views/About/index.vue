@@ -1,5 +1,5 @@
 <template lang="pug">
-  main.about__wrap about
+  main.about__wrap this about page
 </template>
 
 <script>
