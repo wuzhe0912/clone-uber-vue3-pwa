@@ -1,14 +1,24 @@
 {
+  // setting vscode default terminal(for windows)
+  "terminal.integrated.shell.windows": "cmd.exe",
+  "terminal.integrated.shellArgs.windows": [
+    "/k", "D:\\cmder_mini\\vendor\\init.bat"
+  ],
   "editor.formatOnSave": true,
-  "eslint.alwaysShowStatus": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  // for TypeScript setting
-  "[typescript]": {
+  "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[typescriptreact]": {
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // for React setting
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.js": "javascriptreact"  // Default all JS files format to React
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
   }
 }
